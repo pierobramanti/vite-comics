@@ -6,8 +6,8 @@ export default {
 <template>
     <div class="container">
         <div class="row">
-            <div class="col-12 border">
-                <div class="d-flex justify-content-between align-items-center">
+            <div class="col-12">
+                <div class="d-flex justify-content-between align-items-center py-4">
                     <img class="img-fluid" src="../assets/dc-logo.png" alt=" DC LOGO">
                     <ul class="list-unstyled d-flex ">
                         <li class="px-2 fw-bolder"><a class="text-decoration-none text-dark text-uppercase" href="#">Characters</a></li>
@@ -32,6 +32,7 @@ header {
         .active {
             border-bottom: 5px solid blue;
             padding-bottom: 40px;
+            
         }
     }
 }
