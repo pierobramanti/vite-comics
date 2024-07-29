@@ -3,10 +3,9 @@
 </script>
 
 <template>
-  <div>
-
-  </div>
-
+  <Header />
+  <Main />
+  <Footer />
 </template>
 
 <style scoped>
