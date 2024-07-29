@@ -19,6 +19,6 @@ export default {
   <Footer />
 </template>
 
-<style scoped>
-
+<style lang="scss">
+ @use "./components/styles/generals.scss"
 </style>
