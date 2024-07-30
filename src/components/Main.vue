@@ -16,6 +16,6 @@ export default {
         </div>
     </main>
 </template>
-<style lang="scss">
-    
+<style >
+
 </style>

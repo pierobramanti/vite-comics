@@ -109,6 +109,29 @@ export default {
                     label: "DC Power Visa",
                     path: "#"
                 }
+            ],
+
+            socials: [
+                {
+                alt: "Facebook",
+                path: "./src/assets/footer-facebook.png"
+            },
+            {
+                alt: "Twitter",
+                path: "./src/assets/footer-twitter.png"
+            },
+            {
+                alt: "Youtube",
+                path: "./src/assets/footer-youtube.png"
+            },
+            {
+                alt: "Pinterest",
+                path: "./src/assets/footer-pinterest.png"
+            },
+            {
+                alt: "Periscope",
+                path: "./src/assets/footer-periscope.png"
+            },
             ]
         }
     }
@@ -150,19 +173,15 @@ export default {
         
                     </div>
                 </div>
-                <div class="bg-secondary position-relative z-3">
+                <div class="position-relative z-3">
                     <div class="container">
-                        <div class="row">
+                        <div class="row bg-secondary">
                             <div class="col-12">
                                 <div class="py-4 d-flex justify-content-between">
-                                    <button class="btn btn-outline-primary text-white rounded-0">Sign-up Now!</button>
+                                    <button class="btn text-white rounded-0">Sign-up Now!</button>
                                     <div class="d-flex">
                                         <h4 class="text-primary text-uppercase me-4">Follow us</h4>
-                                        <a class="mx-2" href="#"><img src="../assets/footer-facebook.png" alt="Facebook"></a>
-                                        <a class="mx-2" href="#"><img src="../assets/footer-twitter.png" alt="Twitter"></a>
-                                        <a class="mx-2" href="#"><img src="../assets/footer-youtube.png" alt="Youtube"></a>
-                                        <a class="mx-2" href="#"><img src="../assets/footer-pinterest.png" alt="Pinterest"></a>
-                                        <a class="mx-2" href="#"><img src="../assets/footer-periscope.png" alt="Periscope"></a>
+                                        <a v-for="img, index in socials" :key="index" class="mx-2" href="#"><img :src="img.path" :alt="img.alt"></a>
                                     </div>
                                 </div>
                             </div>
