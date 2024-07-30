@@ -175,14 +175,16 @@ export default {
                 </div>
             </div>
                 <div class="position-relative z-3">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12 bg-dark">
-                                <div class="py-4 d-flex justify-content-between">
-                                    <button class="btn text-white border-blue rounded-0">Sign-up Now!</button>
-                                    <div class="d-flex">
-                                        <h4 class="text-primary text-uppercase me-4">Follow us</h4>
-                                        <a v-for="img, index in socials" :key="index" class="mx-2" href="#"><img :src="img.path" :alt="img.alt"></a>
+                    <div class="bg-dark">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="py-4 d-flex justify-content-between">
+                                        <button class="btn text-white border-blue rounded-0">Sign-up Now!</button>
+                                        <div class="d-flex">
+                                            <h4 class="text-primary text-uppercase me-4">Follow us</h4>
+                                            <a v-for="img, index in socials" :key="index" class="mx-2" href="#"><img :src="img.path" :alt="img.alt"></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
