@@ -64,9 +64,9 @@ export default {
         <div class="row">
             <div class="col-12">
                 <div class="d-flex justify-content-between align-items-center py-4">
-                    <img class="img-fluid" src="../assets/dc-logo.png" alt=" DC LOGO">
+                    <a href="/"><img class="img-fluid" src="../assets/dc-logo.png" alt="DC Comics"></a>
                     <ul class="list-unstyled d-flex ">
-                        <li v-for="item, i in menuItems" :key="i" class="px-2 fw-bolder"><a class="text-decoration-none text-dark text-uppercase" :class="item.isClicked ? 'active' : ''"  :href="item.url"> {{ item.label }} </a></li>
+                        <li v-for="item, i in menuItems" :key="i" class="px-2 fw-bolder"><a class="text-decoration-none text-uppercase" :class="item.isClicked ? 'active' : ''"  :href="item.url"> {{ item.label }} </a></li>
                     </ul>
                 </div>
             </div>
