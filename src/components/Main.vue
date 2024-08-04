@@ -50,7 +50,7 @@
                     <div class="col-12">
                         <div class="py-5">
                             <div class="d-flex align-items-center justify-content-around">
-                                <div v-for="item, index in shopItems" :key="`shop-${index}`" class="d-flex align-items-center">
+                                <div v-for="item, index in shopItems" :key="`shop-${index}`" class="d-flex align-items-center ms-4">
                                     <a class="w_square me-3" :href="item.href">
                                         <img :src="item.src" :alt="item.text">
                                     </a>
