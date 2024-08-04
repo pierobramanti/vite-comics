@@ -17,11 +17,18 @@ export default {
 div.cover-box {
    min-width: 200px;
     aspect-ratio: 1 / 1;
+    cursor: pointer;
+    overflow: hidden;
     img {
         min-width: 100%;
         max-height: 100%;
         object-fit: cover;
         object-position: top;
+        transition: all 0.7s ease;
+        &:hover {
+            opacity: 0.5;
+            transform: scale(1.2)
+        }
     }
 }
 </style>
