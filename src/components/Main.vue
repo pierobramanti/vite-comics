@@ -2,6 +2,8 @@
 import BlueSection from '../components/partials/Blue-section.vue';
 import Hero from '../components/partials/Hero.vue';
 import ComicsSection from '../components/partials/ComicSection.vue';
+
+import comics from '../components/data/comicList';
 export default {
     components: {
         Hero,
@@ -17,7 +19,7 @@ export default {
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <ComicsSection />
+                        <ComicsSection v-for="thumb, index in comics" :key="`t-${index}`" :cover="thumb"/>
                     </div>
                 </div>
             </div>
