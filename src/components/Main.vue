@@ -1,9 +1,11 @@
 <script>
 import BlueSection from '../components/partials/Blue-section.vue';
 import Hero from '../components/partials/Hero.vue';
+import ComicsSection from '../components/partials/ComicSection.vue';
 export default {
     components: {
         Hero,
+        ComicsSection,
         BlueSection
     }
 }
@@ -15,7 +17,7 @@ export default {
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                            <h2 class="text-light py-5">--> Content goes here <--</h2>
+                        <ComicsSection />
                     </div>
                 </div>
             </div>
