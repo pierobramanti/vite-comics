@@ -7,9 +7,10 @@ export default {
 </script>
 <template>
     <div class="col-2">
-        <div class="cover-box">
+        <div class="cover-box p-3">
             <img :src="cover.thumb" :alt="cover.series" class="img-fluid">
         </div>
+        <p class="text-uppercase text-white mt-3">{{ cover.series }}</p>
     </div>
 </template>
 
