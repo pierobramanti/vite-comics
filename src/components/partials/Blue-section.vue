@@ -25,7 +25,7 @@ export default {
                 },
                 {
                     href: "#",
-                    src: "./src/assets/buy-dc-power-visa.svg",
+                    src: "./src/assets/buy-dc-power-visa.png",
                     text: "DC Power Visa"
                 }
             ]

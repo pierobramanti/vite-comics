@@ -1,11 +1,15 @@
 <script>
 import { menuHeader } from '../components/data/menuLists'
+import { itemClicked } from '../components/data/events';
 export default {
     data() {
         return {
-            menuHeader,
+            menuHeader
         }
-    }
+    },
+    methods: {
+            itemClicked
+        }
 }
 </script>
 
@@ -18,7 +22,9 @@ export default {
                         <img class="img-fluid" src="../assets/dc-logo.png" alt="DC Comics">
                     </a>
                     <ul class="list-unstyled d-flex">
-                        <li v-for="item, i in menuHeader" :key="`h-${i}`" class="px-2 fw-bolder"><a class="text-decoration-none text-uppercase" :class=" { 'active' : item.isClicked } " :href="item.url"> {{ item.label }} </a></li>
+                        <li v-for="item, i in menuHeader" :key="`h-${i}`" class="px-2 fw-bolder">
+                            <a class="text-decoration-none text-uppercase" :class=" { 'active' : item.isClicked } " :href="item.url" @click="itemClicked(menuHeader, i)"> {{ item.label }} </a>
+                        </li>
                     </ul>
                 </div>
             </div>
